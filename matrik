@@ -1,0 +1,41 @@
+public class PenjumlahanMatriks {
+
+    public static void main(String[] args) {
+        int[][] matriks1 = { { 2, 5, 3 }, { 4, 1, 6 } };
+
+        int[][] matriks2 = { { 1, 4, 3 }, { 3, 2, 1 } };
+
+        int[][] matriksHasil = new int[matriks1.length][matriks1[0].length];
+
+        for (int i = 0; i < matriksHasil.length; i++) {
+            for (int j = 0; j < matriksHasil[0].length; j++) {
+                matriksHasil[i][j] = matriks1[i][j] + matriks2[i][j];
+            }
+        }
+
+        System.out.println("=== PENJUMLAHAN MATRIK ===");
+        System.out.println("MATRIK 1");
+        for (int[] baris : matriks1) {
+            for (int elemen : baris) {
+                System.out.print(elemen + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("MATRIK 2");
+        for (int[] baris : matriks2) {
+            for (int elemen : baris) {
+                System.out.print(elemen + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("Hasil Penjumlahan Matrik 1 dan Matrik 2 adalah:");
+        for (int[] baris : matriksHasil) {
+            for (int elemen : baris) {
+                System.out.print(elemen + " ");
+            }
+            System.out.println();
+        }
+    }
+}
